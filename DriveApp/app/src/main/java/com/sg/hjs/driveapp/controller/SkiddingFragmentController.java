@@ -1,7 +1,11 @@
 package com.sg.hjs.driveapp.controller;
 
+import android.content.Intent;
+import android.view.View;
 import android.widget.ArrayAdapter;
 
+import com.sg.hjs.driveapp.R;
+import com.sg.hjs.driveapp.activitys.LoginActivity;
 import com.sg.hjs.driveapp.databinding.FragmentSkiddingBinding;
 import com.sg.hjs.driveapp.fragments.SkiddingFragment;
 
@@ -21,6 +25,10 @@ public class SkiddingFragmentController {
         this.fragment = fragment;
 
         addToList();
+    }
+
+    public void layLisenter(View v) {
+        fragment.startActivity(new Intent(fragment.getContext(), LoginActivity.class));
     }
 
     private void addToList() {

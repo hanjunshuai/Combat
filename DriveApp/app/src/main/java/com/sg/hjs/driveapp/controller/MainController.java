@@ -1,8 +1,6 @@
 package com.sg.hjs.driveapp.controller;
 
-import android.support.annotation.IdRes;
 import android.view.View;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.sg.hjs.driveapp.R;
@@ -37,7 +35,6 @@ public class MainController {
                 .commit();
 
     }
-
 
     public void rbSectionOneClicked(View view) {
         mainActivity.getSupportFragmentManager()

@@ -7,18 +7,60 @@
             type="com.sg.hjs.driveapp.controller.SectionTwoFragmentController"/>
     </data>
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                 xmlns:tools="http://schemas.android.com/tools"
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:background="@android:color/white"
-                 tools:context="com.sg.hjs.driveapp.fragments.SectionTwoFragment">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        tools:context="com.sg.hjs.driveapp.fragments.SectionTwoFragment">
 
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="two"/>
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    </FrameLayout>
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/kemu2_miji"
+                android:text="科二秘籍"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/kemu2_shipin"
+                android:text="视频集锦"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/kemu2_kaoqianchongci"
+                android:text="考前冲刺"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@mipmap/kemu2_baoxian"
+                android:text="学车保险"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </layout>
