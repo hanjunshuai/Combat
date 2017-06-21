@@ -1,0 +1,84 @@
+<layout>
+
+    <data>
+
+        <variable
+            name="controller"
+            type="com.sg.hjs.driveapp.controller.ExamFragmentController"/>
+    </data>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sg.hjs.driveapp.fragments.ExamFragment">
+
+        <TextView
+            android:id="@+id/tvExam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="eaxm"/>
+
+        <CheckBox
+            android:id="@+id/cbA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvExam"/>
+
+        <CheckBox
+            android:id="@+id/cbB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cbA"/>
+
+        <CheckBox
+            android:id="@+id/cbC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cbB"/>
+
+        <CheckBox
+            android:id="@+id/rbD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cbC"/>
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="上一题"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="@{controller::isCheckBox}"
+                android:text="下一题"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

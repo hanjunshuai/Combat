@@ -26,10 +26,24 @@
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"/>
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="立即登录"/>
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即登录"/>
+
+                <TextView
+                    android:id="@+id/loacTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="定位中....."/>
+            </LinearLayout>
         </LinearLayout>
 
         <ListView

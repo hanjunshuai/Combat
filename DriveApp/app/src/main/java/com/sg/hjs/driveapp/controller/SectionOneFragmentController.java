@@ -1,6 +1,10 @@
 package com.sg.hjs.driveapp.controller;
 
+import android.view.View;
+
+import com.sg.hjs.driveapp.R;
 import com.sg.hjs.driveapp.databinding.FragmentSectionOneBinding;
+import com.sg.hjs.driveapp.fragments.ExamFragment;
 import com.sg.hjs.driveapp.fragments.SectionOneFragment;
 
 /**
@@ -14,5 +18,13 @@ public class SectionOneFragmentController {
     public SectionOneFragmentController(FragmentSectionOneBinding binding, SectionOneFragment fragment) {
         this.binding = binding;
         this.fragment = fragment;
+    }
+
+    public void btnExamLisenter(View v) {
+        fragment.getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment,new ExamFragment())
+                .addToBackStack(ExamFragment.NAME)
+                .commit();
     }
 }

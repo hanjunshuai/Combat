@@ -45,7 +45,8 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="报名"/>
+                    android:text="报名"
+                    android:textColor="@drawable/text_color"/>
 
                 <RadioButton
                     android:id="@+id/rbSectionOne"
@@ -57,6 +58,7 @@
                     android:gravity="center"
                     android:onClick="@{controller::rbSectionOneClicked}"
                     android:text="科一"
+                    android:textColor="@drawable/text_color"
                     />
 
                 <RadioButton
@@ -67,7 +69,8 @@
                     android:button="@null"
                     android:gravity="center"
                     android:onClick="@{controller::rbSectionTwoClicked}"
-                    android:text="科二"/>
+                    android:text="科二"
+                    android:textColor="@drawable/text_color"/>
 
                 <RadioButton
                     android:id="@+id/rbSectionThree"
@@ -77,7 +80,8 @@
                     android:button="@null"
                     android:gravity="center"
                     android:onClick="@{controller::rbSectionThreeClicked}"
-                    android:text="科三"/>
+                    android:text="科三"
+                    android:textColor="@drawable/text_color"/>
 
                 <RadioButton
                     android:id="@+id/rbSectionFour"
@@ -87,7 +91,8 @@
                     android:button="@null"
                     android:gravity="center"
                     android:onClick="@{controller::rbSectionFourClicked}"
-                    android:text="科四"/>
+                    android:text="科四"
+                    android:textColor="@drawable/text_color"/>
 
                 <RadioButton
                     android:id="@+id/rbTakeBook"
@@ -96,7 +101,8 @@
                     android:layout_weight="1"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="拿本"/>
+                    android:text="拿本"
+                    android:textColor="@drawable/text_color"/>
             </RadioGroup>
 
             <FrameLayout
